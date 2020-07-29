@@ -1,0 +1,319 @@
+body{
+      background-image: url(https://thevidaconsultancy.com/wp-content/uploads/2016/08/love.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  max-width: 100%;
+  background-size: cover;
+  font-size: 1.1rem;
+  color: white;
+  font-family: helvetica;
+  line-height: 1.4rem;
+}
+
+
+#title{
+  color: black;
+  font-family: cursive;
+}
+
+
+#description{
+  font-family: auto;
+  font-size: 1.3rem;
+}
+
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2rem;
+  padding: 20px;
+}
+
+
+form{
+  display: flex;
+  justify-content: center;
+  background-color: hsla(0, 84%, 30%, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+.formbox{
+  width: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+
+#sexuality-label{
+  display: flex;
+  text-decoration: underline;
+  font-family: helvetica;
+}
+
+
+.section1{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+
+#agepref{
+  display: flex;
+  text-decoration: underline;
+}
+
+
+#kids{
+  display: flex;
+  text-decoration: underline;
+}
+
+
+.section2{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+
+.subsection4{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#politics{
+  display: flex;
+   text-decoration: underline;
+}
+
+
+.buttons{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.subsection5{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#spending{
+  display: flex;
+  text-decoration: underline;
+}
+
+
+#religious{
+  display: flex;
+   text-decoration: underline;
+}
+
+
+.subsection6{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.section3{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.section4{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.section4b{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+
+#love-language{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+
+
+#hobbies-label{
+  text-align: center;
+}
+
+
+#commentbox-label{
+  text-align: center;
+}
+
+
+#submit{
+  width: 350px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 5px;
+  font-family: copperplate;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+  border: none;
+  background-color: lemonchiffon;
+}
+
+
+#name{
+  height: 30px;
+  font-size: 1.1rem;
+  border: none;
+}
+
+
+#email{
+  height: 30px;
+  font-size: 1.1rem;
+  border: none;
+}
+
+
+#number{
+  height: 30px;
+  font-size: 1.1rem;
+  border: none;
+}
+
+
+#dropdown{
+  height: 30px;
+  font-size: 1.1rem;
+  border: none;
+  color: gray;
+}
+
+
+#personality{
+  height: 30px;
+  font-size: 1.1rem;
+  border: none;
+  color: gray;
+}
+
+
+#religion{
+  height: 30px;
+  font-size: 1.1rem;
+  border: none;
+}
+
+
+#submit:hover{
+  background-color: white;
+}
+
+/*media queries*/
+
+/*tablets*/
+
+@media (max-width: 760px){
+  }
+  .formbox{
+    width: 600px;
+  }
+  #religion{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px){
+  .formbox{
+    width: 500px;
+  }
+  #religion{
+    font-size: .88rem;
+  }
+  .section1{
+    display: flex;
+    flex-direction: column;
+  }
+  .section2{
+    display: flex;
+    flex-direction: column;
+  }
+  .section4{
+    font-size: 1rem;
+  }
+  
+}
+
+/*mobile*/
+
+@media (max-width: 500px){
+  #title{
+    line-height: 30px;
+  }
+  .formbox{
+    width: 300px;
+  }
+  #religion{
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 479px){
+  #title{
+    line-height: 30px;
+  }
+  .formbox{
+    width: 300px;
+  }
+  #religion{
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 340px){
+  #title{
+    line-height: 30px;
+  }
+  .formbox{
+    width: 240px;
+  }
+  #religion{
+    line-height: 15px;
+  }
+  .buttons{
+    font-size: .8rem;
+  }
+  #submit{
+    width: 200px;
+  }
+  .section1{
+    font-size: .8rem;
+  }
+}
