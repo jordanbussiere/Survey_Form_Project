@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en>
+<link href="survey.css" rel="stylesheet">
+<meta charset="utf-8">
+    <meta name="viewport" 
+          content="width=device-width, initial scale=1, maximum scale=1, user-scalable=no">
+    <meta name="keywords" 
+          content="Free Code Camp, survey, project">
+    <meta name="description" 
+          content="This is a hypothetical matchmaking survey form created for a FreeCodeCamp project">
+    </meta> 
+    <title="Survey Form Project"></title>
+  </head>
+
+
+<body>
+<header>
+  <!--FCC project tester-->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> </header>
+ 
+  
+ <div class="heading">
+<h1 id="title">The Myers Matchmaking Survey</h1>
+  <p id="description">Tired of swiping left? Take this survey to screen for compatible matches today!</p>
+  </div>
+  
+  
+<form id="survey-form">
+ <div class="formbox">
+    
+   <label for="name" id="name-label">Name:</label>
+    <input id="name" 
+           type="name"
+           placeholder="Enter your name"
+           required>
+    </input>
+<br>
+
+<label for="email" id="email-label">Email:</label>
+    <input id="email" 
+           type="email" 
+           required  
+           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+           placeholder="Enter your email">
+    </input>
+<br>
+
+<label for="number" 
+       id="number-label">Age:</label>
+    <input id="number" 
+           type="number"
+           min="18"
+           max="120"
+           placeholder="Enter your age">
+    </input>
+<br>
+
+ <label for "dropdown">Gender:</label>
+    <select id="dropdown" 
+            name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+</select>
+<br>
+
+ <label for "personality" id="personalitylabel">Select Your Myers Briggs Type:</label>
+  <select id="personality">
+    <option value="intj">INTJ</option>
+    <option value="intp">INTP</option>
+    <option value="entj">ENTJ</option>
+    <option value="entp">ENTP</option>
+    <option value="infj">INFJ</option>
+    <option value="infp">INFP</option>
+    <option value="enfj">ENFJ</option>
+    <option value="enfp">ENFP</option>
+    <option value="istj">ISTJ</option>
+    <option value="isfj">ISFJ</option>
+    <option value="estj">ESTJ</option>
+    <option value="esfj">ESFJ</option>
+    <option value="istp">ISTP</option>
+    <option value="isfp">ISFP</option>
+    <option value="estp">ESTP</option>
+    <option value="esfp">ESFP</option>
+</select>
+
+<br><br>
+
+<div class="section1"> <!--divsections made so that flexbox works in CSS-->
+  
+  <div class="subsection1">
+    <label for="sexuality" id="sexuality-label">Select all that apply:</label>
+<div id="sexualitybox">
+  <div class="checkbox-label">
+      <input type="checkbox"
+           id="males"
+           name="sexuality"
+           value="males">
+    <label for="sexuality1">I am interested in males</label></div>
+  <div class=checkbox-label>
+      <input type="checkbox"
+             id="females" 
+             name="sexuality" 
+             value="females">
+    <label for="sexuality">I am interested in females</label></div>
+  <div class="checkbox-label">
+     <input type="checkbox"
+            id="other" 
+            name="sexuality3" 
+            value="other">
+    <label for="sexuality2">I am interested in other genders</label></div>
+    </div></div>
+    <br>
+
+<div class="subsection2">
+<label id="agepref" for="close-age, younger, older, idc" name="age-compat">I prefer to date someone:</label>
+<div id="ageprefbox">
+  <div class="checkbox-label">
+  <input type="checkbox" 
+         id="close-age"
+         name="age-compat"
+         value="close-age">
+  <label for="close-age">close in age to me</label><br></div>
+<div class="checkbox-label">
+  <input type="checkbox"
+         id="younger"
+         name="age-compat"
+         value="younger">
+  <label for="younger">younger than me</label><br></div>
+<div class="checkbox-label">
+  <input type="checkbox"
+         id="older"
+         name="age-compat"
+         value="older">
+  <label for="older">older than me</label><br></div>
+<div class="checkbox-label">
+  <input type="checkbox"
+         id="idc"
+         name="age-compat"
+         value="idc">
+  <label for="idc">any age</label></div>
+  </div></div>
+
+  <br>
+
+  <div class="subsection3">
+    <label for="kids" name="kids" id="kids">Do you want children?</label>
+<div class="flexboxrow">
+    <input type="radio"
+         name="kids"
+         value="yes">
+<label for="yes">yes</label></div>
+<div class="flexboxrow">
+  <input type="radio"
+         name="kids"
+         value="no">
+  <label for="no">no</label></div>
+<div class="flexboxrow">
+  <input type="radio"
+         name="kids"
+         value="idk">
+  <label for="idk">not sure</label></div>
+<br>
+  </div></div>
+<br><br>
+
+<div class="section2">
+  
+  <div class="subsection4">
+  <label for="politics" id="politics" name="politics">Are you:</label>
+    <div class="buttons">
+    <input type="radio"
+           name="politics"
+           value="conservative">
+      <label for="conservative">conservative</label></div>
+    <div class="buttons">
+  <input type="radio"
+         name="politics"
+         value="liberal">
+      <label for="liberal">liberal</label></div>
+    <div class="buttons">
+  <input type="radio"
+         name="politics"
+         value="idk">
+     <label for="idk">indifferent</label>
+    </div></div>
+
+<br>
+
+<div class="subsection5">
+  <label for="spending" name="spending" id="spending"> Are you a: </label>
+  <div class="buttons">
+    <input type="radio" 
+           name="spending" 
+           value="saver">
+    <label for="saver">saver</label></div>
+  <div class="buttons">
+    <input type="radio" 
+           name="spending" 
+           value="spender">
+      <label
+             for="spender">spender</label></div>
+  <div class="buttons">
+   <input type="radio" 
+          name="spending" 
+          value="middle">
+    <label for="middle">in between</label></div></div>
+
+<br>
+
+ <div class="subsection6">
+<label for="religious" name="religious" id="religious"> Is religion important to you?</label>
+   <div class="buttons">
+  <input type="radio" 
+         name="religious" 
+         value="yes">
+     <label for="yes">yes</label></div>
+   <div class="buttons">
+  <input type="radio" 
+         name="religious" 
+         value="no">
+     <label for="no">no</label></div>
+   <div class="buttons">
+  <input type="radio"
+         name="religious"
+         value="partially">
+       <label for="partially">partially</label>
+   </div></div></div>
+
+<br><br>
+
+<div class="section3">
+<label for="religion" id="religion">If you answered yes to the previous question, what religion do you identify with?</label>
+    <input id="religion" 
+           type="religion"
+           placeholder="type here">
+   </input>
+</div>
+  
+<br><br>
+
+<div class="section4">
+  <div class="subsection7">
+    <label for="love-language" id="love-language">Select your love language(s):</label>
+    <div class="section4b">
+      <div class="buttons">
+      <input type="checkbox" 
+             id="words" 
+             name="love-language" 
+             value="words">
+        <label for="words">words of affirmation</label></div>
+      <div class="buttons">
+     <input type="checkbox" 
+            id="gifts" 
+            name="love-language" 
+            value="gifts">
+        <label for="gifts">gifts</label></div>
+      <div class="buttons">
+    <input type="checkbox" 
+           id="service" 
+           name="love-language" 
+           value="service">
+        <label for="serice">acts of service</label></div>
+      <div class="buttons">
+   <input type="checkbox" 
+          id="time" 
+          name="love-language" 
+          value="time">
+        <label for="time">quality time</label></div>
+      <div class="buttons">
+   <input type="checkbox" 
+          id="touch" 
+          name="love-language" 
+          value="touch">
+    <label for="touch">touch</label>
+    </div></div></div>
+<br><br>
+
+
+<label for="hobbies" id="hobbies-label">What are your hobbies/interests?</label>
+<textarea id="hobbiesbox" name="hobbies" rows="10" cols="50" placeholder="type here"></textarea>
+
+<br>
+
+  
+      <label for="commentbox" id="commentbox-label">Is there anything else we should know to make sure your matches are successful?</label>
+  <textarea id="commentbox" name="commentbox" rows="10" cols="50" placeholder="type here"></textarea>
+  <br><br>
+  <button type="submit" id="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
